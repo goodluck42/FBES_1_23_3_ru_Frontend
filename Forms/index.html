@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="index.css">
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+
+<form method="post" id="personal-form" action="http://localhost:5012/post_data">
+	<div>
+		<label for="first-name">First name:</label>
+		<input id="first-name" name="FirstName" type="text" placeholder="First name">
+	</div>
+
+	<div>
+		<label>
+			<span>Last name</span>
+			<input id="last-name" name="LastName" type="text" placeholder="Last name"/>
+		</label>
+	</div>
+
+
+	<div>
+		<label for="eula">Accept EULA</label>
+		<input id="eula" name="EULA" type="checkbox" checked>
+	</div>
+
+	<div>
+		<label for="role">Select role:</label>
+		<select id="role" name="Role">
+			<option value="Student">Student</option>
+			<option value="Teacher" selected>Teacher</option>
+			<option value="Other">Other</option>
+		</select>
+	</div>
+
+	<div>
+		<label>
+			<span>Male</span>
+			<input id="male-gender" type="radio" value="Male" name="Gender" checked>
+		</label>
+		<label>
+			<span>Female</span>
+			<input type="radio" value="Female" name="Gender">
+		</label>
+	</div>
+
+	<div>
+		<input id="submit-form" type="submit" value="Send"/>
+	</div>
+
+</form>
+
+</body>
+</html>

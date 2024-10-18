@@ -1,0 +1,27 @@
+#main-slider img {
+    width: 100%;
+}
+
+#main-slogan {
+    display: flex;
+}
+
+#main-slogan > div:first-child {
+    flex: 1.2;
+    font-size: 4.5rem;
+}
+
+#main-slogan > div:nth-child(2)
+{
+    flex: 1;
+}
+
+#main-slogan > div:first-child span,
+#main-slogan > div:nth-child(2) span:not(:first-child) {
+    color: #6C7275
+}
+
+#main-slogan > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}

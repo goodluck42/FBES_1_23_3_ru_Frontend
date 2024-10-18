@@ -1,0 +1,1 @@
+body{font-family:Tahoma,Geneva,Verdana,sans-serif;background-image:url(image8.png);background-repeat:no-repeat;background-size:cover}input[type=text]:focus{border-color:red;outline:0}input[disabled][type=text]{cursor:crosshair}#personal-form{user-select:none;display:flex;flex-direction:column;gap:1rem;justify-content:center;align-items:center}

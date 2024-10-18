@@ -1,0 +1,75 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    /*font-size: 8px;*/
+}
+
+html, body
+{
+    margin: 0;
+}
+
+span.container
+{
+    font-size: 1rem;
+}
+
+div.container-b div
+{
+    font-size: 0.9em;
+}
+
+div.container-c
+{
+    font-size: 14pt;
+}
+
+
+div.container-d
+{
+    font-size: 1cm;
+}
+
+
+div.container-e-outer
+{
+    width: 10rem;
+}
+
+div.container-e-outer > div.container-e-inner
+{
+    border: 1px solid #000;
+    background-color: deeppink;
+    width: 50%;
+    height: 50%;
+}
+
+div.container-f
+{
+    background-color: deeppink;
+    width: 25vw;
+    height: 25vh;
+    border: 1px solid blue;
+    border-radius: 100%;
+}
+
+body
+{
+    font-size: 1.1rem;
+    font-family: JosefinSans, sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-style: italic;
+    /*text-align: center;*/
+    /*text-decoration: underline;*/
+}
+
+.wrap-test
+{
+    width: 20%;
+    word-wrap: break-word;
+}

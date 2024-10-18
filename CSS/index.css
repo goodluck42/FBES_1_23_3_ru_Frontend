@@ -1,0 +1,139 @@
+/* find by className */
+
+.mydiv
+{
+    text-align: center;
+}
+
+#myid
+{
+    /*margin: 10px 5px 8px 9px;*/
+    /*margin: 10px 5px 3px;*/
+    margin-right: 10px;
+    color: #006767;
+}
+
+[data-attr=greenColor]
+{
+    color: green !important;
+}
+
+div[data-attr]
+{
+    color: #ed0404;
+}
+
+span[data-attr]
+{
+    color: blueviolet;
+}
+
+.hovered
+{
+    font-weight: 800;
+}
+
+.mydiv.hovered
+{
+    text-shadow: red 2px 1px 6px;
+}
+
+div#super-div.mydiv.hovered[data-custom-attribute=greenColor],
+span#super-div.mydiv.hovered[data-custom-attribute=greenColor]
+{
+    color: gold;
+}
+
+/*ul.list > li::marker*/
+/*{*/
+/*    color: gold;*/
+/*}*/
+
+ul.list > li
+{
+    color: darkorange;
+}
+
+div.parentDiv > *
+{
+    color: coral;
+}
+
+html.theme-black div
+{
+    background-color: black;
+    color: white;
+}
+
+.container div + div
+{
+    color: gold;
+}
+
+.container2 a ~ span
+{
+    color: cyan;
+}
+
+
+.o-list > li:first-child
+{
+    text-decoration: underline;
+}
+
+.o-list > li:last-child
+{
+    text-decoration: line-through;
+}
+
+.o-list > li::marker
+{
+    list-style: none;
+}
+
+
+.o-list > li:nth-child(2)::marker
+{
+    color: initial;
+}
+
+.o-list > li:nth-child(2)
+{
+    color: chartreuse;
+}
+
+/* 2n-1 - odd items */
+/* 2n - even items */
+.o-list > li:nth-child(2n-1)
+{
+    color: red;
+}
+
+a.link
+{
+    background: url(SocialMediaIcons.png);
+    color: #ff00fb;
+    text-decoration: none;
+    transition: 0.5s color linear;
+    display: block;
+    height: 92px;
+    width: 92px;
+    background-position: 10px 10px;
+}
+
+a.link:hover
+{
+    color: #00ffea;
+    cursor: pointer;
+}
+
+/*
+ : - pseudo class
+ :: - pseudo element
+*/
+
+/*body*/
+/*{*/
+/*    color: gold;*/
+/*}*/
+

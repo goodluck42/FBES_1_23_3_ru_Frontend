@@ -1,0 +1,20 @@
+@import "header.css";
+@import "main.css";
+
+@font-face {
+    font-family: "Poppins";
+    src: url("assets/fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+}
+
+body {
+    font-family: Poppins, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper > *:first-child {
+    width: 80%;
+}
