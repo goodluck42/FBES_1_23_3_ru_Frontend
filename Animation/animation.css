@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+#container .circle {
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: deeppink;
+    position: absolute;
+    animation-name: MovingCircleAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-direction: reverse;
+    /*animation-fill-mode: forwards;*/
+}
+
+#container .circle-with-line {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    background-color: deeppink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: CircleTransformAnimation 3s linear infinite alternate;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+ .circle-with-line > div:first-child {
+    width: 100%;
+    background-color: #fff;
+    height: 2px;
+    transform: rotate(135deg);
+}
+
+#container .square
+{
+    width: 3rem;
+    height: 3rem;
+    background-color: deeppink;
+    margin-left: 10%;
+    transform: translate(5%);
+}
+
+@keyframes CircleAnimation {
+    from {
+        opacity: 1;
+        background-color: deeppink;
+    }
+
+    to {
+        opacity: 0.5;
+        background-color: coral;
+    }
+}
+
+@keyframes MovingCircleAnimation {
+    0% {
+        top: 0;
+        left: 0;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: 0;
+        left: 95%;
+    }
+
+    50% {
+        top: 95%;
+        left: 95%;
+        background-color: chartreuse;
+    }
+
+    75% {
+        top: 95%;
+        left: 0;
+        background-color: blueviolet;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes CircleTransformAnimation {
+    from {
+        transform: rotate(0deg) scale(0);
+    }
+    to {
+        transform: rotate(360deg) scale(5);
+    }
+}

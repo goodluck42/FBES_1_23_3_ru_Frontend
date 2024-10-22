@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 #main-slider img {
     width: 100%;
 }
@@ -8,7 +12,7 @@
 
 #main-slogan > div:first-child {
     flex: 1.2;
-    font-size: 4.5rem;
+    font-size: 3rem;
 }
 
 #main-slogan > div:nth-child(2)

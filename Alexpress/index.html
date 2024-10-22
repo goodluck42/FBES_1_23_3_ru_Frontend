@@ -4,10 +4,41 @@
 	<meta charset="UTF-8">
 	<title>Alexpress</title>
 	<link rel="stylesheet" href="index.css">
+	<script src="index.js" type="application/javascript"></script>
 </head>
 <body>
 <header>
 	<nav id="header-nav">
+		<div id="header-hamburger">
+			<label for="header-hamburger-toggle">
+				<img src="assets/hamburger.svg" alt="Hamburger"/>
+			</label>
+			<input id="header-hamburger-toggle" type="checkbox">
+			<div id="header-hamburger-content">
+				<nav id="header-hamburger-nav">
+					<ul id="header-hamburger-nav-list">
+						<li id="header-hamburger-logo">
+							<img src="assets/logo.svg" alt="Alexpress Logo"/>
+						</li>
+						<li id="header-hamburger-search">
+							<label>
+								<input type="search" />
+								<img src="assets/search.svg" alt="Search"/>
+							</label>
+						</li>
+						<li>
+							<ul id="header-hamburger-links">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">Shop</a></li>
+								<li><a href="#">Product</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div id="header-hamburger-account-info"></div>
+			</div>
+		</div>
 		<div id="header-logo">
 			<img src="assets/logo.svg" alt="Alexpress Logo"/>
 		</div>
@@ -30,7 +61,7 @@
 		<section id="main-slider">
 			<img src="assets/0db6128ab1993d65eae0e96498fbd94e.jpg" alt="Main Image"/>
 			<div id="main-slogan">
-				<div>Simply Unique<span>/</span>
+				<div>Simply Unique<span>/</span><br/>
 					Simply Better<span>.</span>
 				</div>
 

@@ -1,0 +1,14 @@
+.square
+{
+    width: 2rem;
+    height: 2rem;
+    background-color: deeppink;
+}
+
+@media screen and (max-width: 768px)
+{
+    .square
+    {
+        background-color: coral;
+    }
+}
