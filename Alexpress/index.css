@@ -18,3 +18,77 @@ body {
 .wrapper > *:first-child {
     width: 80%;
 }
+
+/* modal */
+
+#modal-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #0000008f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modal {
+    border: 1px solid white;
+    width: 75%;
+}
+
+#modal header,
+#modal footer {
+    background-color: yellow;
+    height: 5%;
+    min-height: 40px;
+    padding: 0.5rem 1rem;
+}
+
+#modal header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#modal main {
+    background-color: blue;
+    min-height: 120px;
+    overflow-y: scroll;
+}
+
+#modal header button
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+}
+
+#modal header button::after,
+#modal header button::before
+{
+    content: '';
+    display: block;
+    width: 1rem;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#modal header button::after
+{
+    transform: rotate(45deg);
+}
+
+#modal header button::before
+{
+    transform: rotate(-45deg);
+}

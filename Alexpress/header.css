@@ -46,6 +46,11 @@
     flex: 0.6;
 }
 
+#header-cart
+{
+    cursor: pointer;
+}
+
 #header-hamburger {
     display: none;
 }
